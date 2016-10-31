@@ -1,5 +1,5 @@
-hash: 6aec254cbf1c8c897e47a09905d2c3faebccf39b530c6c114d853eb7f2e87882
-updated: 2016-10-27T18:50:33.491971271+09:00
+hash: d16dd2a24fffb3bdf2f1358ed0860c5557d4342015d05c5378a6df5bfcdc2be1
+updated: 2016-10-31T20:50:38.701377861+09:00
 imports:
 - name: github.com/agtorre/gocolorize
   version: f42b554bf7f006936130c9bb4f971afd2d87f671
@@ -39,6 +39,10 @@ imports:
   - testing
 - name: github.com/robfig/pathtree
   version: 41257a1839e945fce74afd070e02bab2ea2c776a
+- name: github.com/smartystreets/assertions
+  version: e9a2f6771d97c709b2f7609fdf89ebde8b64c926
+- name: github.com/smartystreets/goconvey
+  version: d4c757aa9afd1e2fc1832aaab209b5794eb336e1
 - name: golang.org/x/net
   version: daba796358cd2742b75aae05761f1b898c9f6a5c
   subpackages:

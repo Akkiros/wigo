@@ -10,3 +10,7 @@ import:
   - revel
 - package: github.com/asaskevich/govalidator
   version: v5
+- package: github.com/smartystreets/goconvey
+  version: ^1.6.2
+- package: github.com/smartystreets/assertions
+  version: ^1.6.0
