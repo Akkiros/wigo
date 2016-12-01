@@ -6,6 +6,7 @@ module:testrunner
 
 GET     /                                       App.Index
 GET     /document/view/:docId                   Document.View
+PUT    /document/:docId                         Document.Update
 
 GET     /search                                 Search.Query
 

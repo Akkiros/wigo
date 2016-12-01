@@ -55,3 +55,19 @@ func (c Document) Write() revel.Result {
 
     return c.Render()
 }
+
+func (c Document) Update(docId int) revel.Result {
+    if c.Request.Method == "PUT" {
+        df, err := parseForm(c.Params)
+        if (err == nil) {
+            // Update to database
+            app.DB.Table("documents").Where("id = ?", docId).Update(&models.Document{Title: df.Title, Content: df.Content})
+        } else {
+            // TEMP: kill the application if there is an form-parsing error
+            // TODO: Handle the submit or database error
+            log.Fatal(err)
+        }
+    }
+
+    return c.Render()
+}

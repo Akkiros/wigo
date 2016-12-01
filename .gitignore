@@ -37,3 +37,7 @@ public/components/
 
 # Vendor (glide output)
 vendor/
+
+# swap files
+*.swp
+*.swo
